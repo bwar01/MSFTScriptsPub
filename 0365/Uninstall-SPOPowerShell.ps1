@@ -63,7 +63,8 @@ Get-SPOSite
 
 
 <#
- # Connect to tenant using user credentials while forcing Modern Auth = ForceOAuth = 1
+ # Connect to tenant using user credentials while forcing Modern Auth = ForceOAuth = 1 Will not work if MFA is enabled.  
+ # Error: Could not authenticate to SharePoint Online https://tenant-admin.sharepoint.us/ using OAuth 2.0 
 #>
 $admin = "admin@contoso.onmicrosoft.com"
 $org = "contoso"
