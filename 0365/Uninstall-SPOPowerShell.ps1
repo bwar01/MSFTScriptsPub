@@ -79,6 +79,14 @@ Get-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\SPO\CMDLETS
 Connect-SPOService -Url https://contoso-admin.sharepoint.us
 Get-SPOSite
 
+<#
+ # Connect to tenant GCCH tenatn using modern auth
+#>
+Connect-SPOService -Url https://contoso-admin.sharepoint.us -Region ITAR
+Get-SPOSite
+
+
+
 
 <#
  # Connect to tenant using user credentials while forcing Modern Auth = ForceOAuth = 1 Will not work if MFA is enabled.  
