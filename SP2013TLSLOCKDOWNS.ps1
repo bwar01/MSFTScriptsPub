@@ -336,6 +336,7 @@ Param ([string]$Nodename)
             
         }
         #1.4 - Install SQL Server 2008 R2 Native Client update for TLS 1.2 support
+        # Download SQLNCLI.mis > https://docs.microsoft.com/en-us/sharepoint/security-for-sharepoint-server/enable-tls-and-ssl-support-in-sharepoint-2013#14---install-sql-server-2008-r2-native-client-update-for-tls-12-support
         Package InstallMicrosoftSQLServer2008R2NativeClient
         {
             Ensure = 'Present'
