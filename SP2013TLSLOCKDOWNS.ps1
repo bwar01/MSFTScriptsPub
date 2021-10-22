@@ -321,7 +321,7 @@ Param ([string]$Nodename)
             Ensure = 'Present'
             Key = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp"
             ValueName = "DefaultSecureProtocols"
-            ValueData = "0x00000AA0"
+            ValueData = "0x00000A80"
             ValueType = "Dword"
             Hex = $true
         }
