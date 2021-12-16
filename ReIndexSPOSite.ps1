@@ -27,6 +27,9 @@ EXAMPLE
 
 ==============================================================#>
 
+#Install PNP PowerShell
+Install-Module SharePointPnPPowerShellOnline
+
 #Config Variables
 $SiteURL = "https://contoso-my.sharepoint.us/personal/jon_doe_contoso_onmicrosoft_com"
  
