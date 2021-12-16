@@ -34,8 +34,8 @@ $SiteURL = "https://contoso-my.sharepoint.us/personal/jon_doe_contoso_onmicrosof
 Connect-PnPOnline -Url $SiteURL 
  
 #Get the Web
-$Web = Get-PnPWeb
+$SPOWeb = Get-PnPWeb
  
 #Request Reindex
-Request-PnPReIndexWeb -Web $Web -Verbose
+Request-PnPReIndexWeb -Web $SPOWeb -Verbose
 
