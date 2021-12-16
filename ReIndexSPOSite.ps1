@@ -40,5 +40,5 @@ Connect-PnPOnline -Url $SiteURL
 $SPOWeb = Get-PnPWeb
  
 #Request Reindex
-Request-PnPReIndexWeb -Web $SPOWeb -Verbose
+Request-PnPReIndexWeb -Web $SPOWeb
 
