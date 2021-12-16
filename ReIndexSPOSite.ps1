@@ -42,3 +42,8 @@ $SPOWeb = Get-PnPWeb
 #Request Reindex
 Request-PnPReIndexWeb -Web $SPOWeb
 
+#Can optionally check status of index content
+#https://docs.microsoft.com/en-us/powershell/module/sharepoint-pnp/get-pnpsearchcrawllog?view=sharepoint-ps#example-2
+#Make sure you are granted access to the crawl log via the SharePoint search admin center at https://-admin.sharepoint.com/_layouts/15/searchadmin/crawllogreadpermission.aspx in order to run this cmdlet.
+Get-PnPSearchCrawlLog -Filter "https://contoso-my.sharepoint.us/personal/jon_doe_contoso_onmicrosoft_com" 
+
